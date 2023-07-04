@@ -14,50 +14,71 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <title>Дизайнер интерьера</title>
+    <title>Sneha Bagade</title>
 </head>
 
 <body>
     <!-- header -->
     <header class="header">
-
         <div class="header-top">
             <div class="container">
-                <nav class="header-nav">
-                    <a class="text-upper" href="#about">ОБО МНЕ</a>
-                    <a class="text-upper" href="#portfolio">ПОРТФОЛИО</a>
-                    <a class="text-upper" href="#contacts">КОНТАКТЫ</a>
+                <nav id="nav1" class="header-nav">
+                    <a class="text-upper" href="/index.html">Home</a>
+                    <a class="text-upper" href="#about">About me</a>
+                    <a class="text-upper" href="#portfolio">Portfolio</a>
+                    <a class="text-upper" href="#contacts">Contact</a>
                 </nav>
+
+                <nav id="nav2" class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <!-- <a class="navbar-brand" href="#">Sneha</a> -->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Contact</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
             </div>
+
+            
         </div>
+
+
+
+        
         <!-- /.header-top -->
 
         <div class="header-content">
             <div class="container">
                 <div class="header-title">
-                    <h1 class="h1">Екатерина Мелисова</h1>
-                    <h2 class="text-upper">ДИЗАЙНЕР ИНТЕРЬЕРА</h2>
+                    <h1 class="h1" >Sneha Bagade</h1>
+                    <h2 class="text-upper">Interior Designer</h2>
                 </div>
-                <a href="https://www.youtube.com/watch?v=DprMXRiSRQc" data-fancybox class="start-video">
-                    <img src="img/poster.jpg" width="237" height="178" alt="img">
-                    <div class="start-video__text">
-                        <div class="start-video__btn">
-                            <svg class="svg-arrow">
-                                <use href="img/svg-sprite.svg#svg-arrow"></use>
-                            </svg>
-                        </div>
-                        <p>Смотреть<br> видео-презентацию</p>
-                    </div>
-                </a>
-                <!-- /.start-video -->
             </div>
         </div>
         <!-- /.header-content -->
 
         <div class="header-slider-wrapper">
             <div class="owl-carousel header-slider">
-                <div><img src="img/header.jpg" alt="Photo-header"></div>
+                <div><img src="img/header.jpg"alt="Photo-header"></div>
                 <div><img src="img/1.jpg" alt="Photo-1"></div>
                 <div><img src="img/2.jpg" alt="Photo-2"></div>
                 <div><img src="img/3.jpg" alt="Photo-3"></div>
@@ -91,48 +112,18 @@
         <section class="portfolio" id="portfolio">
             <div class="container">
                 <div class="portfolio__title">
-                    <h2 class="h2">Портфолио</h2>
+                    <h2 class="h2">Portfolio</h2>
                 </div>
 
                 <!-- portfolio-card-desktop -->
-                <div class="owl-carousel portfolio-content">
+                <div class="owl-carousel portfolio-content" style="margin: auto;">
 
-                    <a href="img/1.1.jpg" data-fancybox="gallery" class="portfolio-card">
-                        <img src="img/1.jpg" width="400" height="440" alt="image">
+                    <a href="/portfolio.html"  class="portfolio-card">
+                        <img src="img/PortfolioCover1.jpg"alt="image">
                     </a>
+                    
                     <!-- /card -->
-                    <a href="img/2.2.jpg" data-fancybox="gallery" class="portfolio-card">
-                        <img src="img/2.jpg" width="400" height="440" alt="image">
-                    </a>
-                    <!-- /card -->
-                    <a href="img/3.3.jpg" data-fancybox="gallery" class="portfolio-card">
-                        <img src="img/3.jpg" width="400" height="440" alt="image">
-                    </a>
-                    <!-- /card -->
-                    <a href="img/4.4.jpg" data-fancybox="gallery" class="portfolio-card">
-                        <img src="img/4.jpg" width="400" height="440" alt="image">
-                    </a>
-                    <!-- /card -->
-                    <a href="img/5.5.jpg" data-fancybox="gallery" class="portfolio-card">
-                        <img src="img/5.jpg" width="400" height="440" alt="image">
-                    </a>
-                    <!-- /card -->
-                    <a href="img/6.6.jpg" data-fancybox="gallery" class="portfolio-card">
-                        <img src="img/6.jpg" width="400" height="440" alt="image">
-                    </a>
-                    <!-- /card -->
-                    <a href="img/7.7.jpg" data-fancybox="gallery" class="portfolio-card">
-                        <img src="img/7.jpg" width="400" height="440" alt="image">
-                    </a>
-                    <!-- /card -->
-                    <a href="img/8.8.jpg" data-fancybox="gallery" class="portfolio-card">
-                        <img src="img/8.jpg" width="400" height="440" alt="image">
-                    </a>
-                    <!-- /card -->
-                    <a href="img/9.9.jpg" data-fancybox="gallery" class="portfolio-card">
-                        <img src="img/9.jpg" width="400" height="440" alt="image">
-                    </a>
-                    <!-- /card -->
+              
                 </div>
                 <!-- /.portfolio-content -->
 
@@ -143,36 +134,30 @@
         <section class="about" id="about">
             <div class="container">
                 <div class="about__title">
-                    <h2 class="h2 h2--white">Обо мне</h2>
+                    <h2 class="h2 h2--white">About me</h2>
                 </div>
                 <div class="about__content">
                     <div class="about__img">
-                        <img src="img/author.jpg" alt="Author">
+                        <img src="img/sneha.jpg" alt="Author">
                     </div>
                     <div class="about__desc">
                         <div class="about__text">
                             <p>
-                                Более 20-ти лет активной работы дизайнером интерьера позволили мне накопить ценнейшие
-                                опыт и знания для создания роскошных и респектабельных интерьеров, отвечающих всем
-                                требованиям даже самого взыскательного заказчика, превращая его неясные фантазии и
-                                желания в настоящие эксклюзивные интерьеры любой сложности, в различных стилистических
-                                направлениях.
+                                As a fresh interior design graduate with strong AutoCAD skills, I bring a fresh perspective, dedication, and a focus on simplicity. I prioritize innovative ideas and genuine connections with clients, believing that the core idea and sincere attitude are crucial in interior design.
                             </p>
                             <p>
-                                Моe творческое кредо в профессии: «Дизайнера в проекте должно быть как можно меньше, а
-                                самая важная деталь при создании интерьера — это идея и искреннее отношение к проекту и
-                                заказчику».
+                                With my AutoCAD expertise, I seamlessly translate design concepts into precise technical drawings, ensuring accuracy and detail. I am eager to contribute my fresh perspective, dedication, and passion for interior design to create remarkable spaces. Despite being new to the industry, I am excited to embark on this transformative journey and bring clients' visions to life.
                             </p>
                         </div>
 
                         <div class="about__statistic animated-number">
                             <div class="about__statistic-item">
-                                <p class="num">20</p>
-                                <span>Лет опыта</span>
+                                <p class="nums">1 Year</p>
+                                <span>Working on projects since</span>
                             </div>
                             <div class="about__statistic-item">
-                                <p class="num">300</p>
-                                <span>Реализованных проектов</span>
+                                <p class="nums">3</p>
+                                <span>Completed projects</span>
                             </div>
                         </div>
                     </div>
@@ -185,42 +170,31 @@
         <section class="contacts" id="contacts">
             <div class="container">
                 <div class="contacts__title">
-                    <h2 class="h2">Контакты</h2>
+                    <h2 class="h2">Contact me</h2>
                 </div>
                 <div class="contacts__content">
                     <div class="contacts-form-wrapper">
-                        <form class="contacts-form">
+                        <form class="contacts-form" action="https://formspree.io/f/mleyrqpa"
+                        method="POST">
                             <div class="form-item">
-                                <input class="form-input" type="text" name="name" placeholder="Ваше имя">
+                                <input class="form-input" type="text" name="name" placeholder="Your name" required >
                             </div>
                             <div class="form-item">
-                                <input class="form-input" type="text" name="email" placeholder="Ваш e-mail">
-                            </div>
-
-                            <div class="form-item">
-                                <textarea class="form-textarea" name="message" placeholder="Сообщение"></textarea>
+                                <input class="form-input" type="email" name="email" placeholder="Your e-mail" required>
                             </div>
 
                             <div class="form-item">
-                                <button type="submit" class="btn">Отправить</button>
+                                <textarea class="form-textarea" name="message" placeholder="Message"></textarea autocomplete="off">
+                            </div>
+
+                            <div class="form-item">
+                                <button type="submit" class="btn">Send</button>
                             </div>
                         </form>
                     </div>
 
                     <div class="contacts-list">
-                        <!-- single item -->
-                        <div class="contacts-list__item">
-                            <div class="contacts-list__icon">
-                                <svg class="svg-phone">
-                                    <use href="img/svg-sprite.svg#svg-phone"></use>
-                                </svg>
-                            </div>
 
-                            <div class="contacts-list__text">
-                                <p class="text-upper">ТЕЛЕФОН:</p>
-                                <a href="tel:+79034384466">8 903 438-44-66</a>
-                            </div>
-                        </div>
 
                         <!-- single item -->
                         <div class="contacts-list__item">
@@ -232,7 +206,7 @@
 
                             <div class="contacts-list__text">
                                 <p class="text-upper">INSTAGRAM:</p>
-                                <a href="tel:+79034384466">melisova_studio</a>
+                                <a href="https://www.instagram.com/snehaa_bagade/" target="_blank">sneha_bagade</a>
                             </div>
                         </div>
 
@@ -245,53 +219,11 @@
                             </div>
 
                             <div class="contacts-list__text">
-                                <p class="text-upper">ПОЧТА:</p>
-                                <a href="mailto:Melisova@gmail.com">Melisova@gmail.com</a>
+                                <p class="text-upper">Gmail:</p>
+                                <a href="mailto:Melisova@gmail.com">snehabagade855@gmail.com</a>
                             </div>
                         </div>
 
-                        <!-- single item -->
-                        <div class="contacts-list__item">
-                            <div class="contacts-list__icon">
-                                <svg class="svg-map">
-                                    <use href="img/svg-sprite.svg#svg-map"></use>
-                                </svg>
-                            </div>
-
-                            <div class="contacts-list__text">
-                                <p class="text-upper">АДРЕС:</p>
-                                <a href="tel:+79034384466">г. Москва, ул. Мытная, д.7, стр.1
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- single item -->
-                        <div class="contacts-list__item">
-                            <div class="contacts-list__icon">
-                                <svg class="svg-pin">
-                                    <use href="img/svg-sprite.svg#svg-pin"></use>
-                                </svg>
-                            </div>
-
-                            <div class="contacts-list__text">
-                                <p class="text-upper">PINTEREST:</p>
-                                <a href="tel:+79034384466">www.pinterest.ru/melisova</a>
-                            </div>
-                        </div>
-
-                        <!-- single item -->
-                        <div class="contacts-list__item">
-                            <div class="contacts-list__icon">
-                                <svg class="svg-be">
-                                    <use href="img/svg-sprite.svg#svg-be"></use>
-                                </svg>
-                            </div>
-
-                            <div class="contacts-list__text">
-                                <p class="text-upper">BEHANCE:</p>
-                                <a href="tel:+79034384466">www.behance.net/melisova</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -302,7 +234,7 @@
 
     <!-- footer -->
     <footer class="footer">
-        <p>&copy; 2023 Ekaterina Melisova</p>
+        <p>&copy; 2023 Sneha Bagade</p>
     </footer>
 
 
@@ -319,7 +251,7 @@
     <script src="libs/animated-number/jquery.spincrement.min.js"></script>
 
     <script src="js/main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
 </html>

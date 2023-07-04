@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background: url("img/background.jpg");
+        }
+        /********************HEADER*************************/
+        header{
+            display:flex;
+            /* justify-content: space-evenly; */
+            width: 100%;
+            position:fixed;
+            z-index: 5;
+        }
+        
+        .header-top{
+            background-color: #574E56;
+            width:100%;
+            /* position: fixed; */
+        }
+        
+        .header-top .container{
+            width:100%;
+            /* z-index: 3; */
+            /* position: fixed; */
+        }
+        
+        .header-nav{
+            display: flex;
+            justify-content: space-evenly;
+            /* position: fixed; */
+        }
+        
+        .header-nav a{
+            color:white;
+            text-decoration: none;
+        }
+
+
+
+        .portfolio__title{
+            text-align: center;
+            margin-bottom: 3rem;
+            margin-top:5rem;
+            font-size: 3rem;
+        }
+
+        .owl-carousel{
+            margin-right: 0;
+        }
+        .portfolio-content{
+            justify-content: center;
+            margin-right:0;
+        }
+        .pdf-container-row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap:2rem;
+        }
+     
+        .pdf-container-row a{
+            width:45%;
+        }
+
+        /* .layer{ */
+            /* display: none; */
+            /* background-color: black; */
+            /* position: relative;
+            top:0;
+            left:0;
+            height: 100%;
+            width:100%;
+        } */
+
+
+        .pdf-container-row>a>img{
+            width:100%;
+        }
+
+
+        /*********************** MEDIA QUERIES *********************/
+
+        @media (max-width: 576px) { 
+            .pdf-container-row a{
+                width:90%;
+            }
+
+            #nav1{
+                display: none;
+            }
+
+            #nav2{
+                display: block;
+            }
+            .header-top{
+                background-color: white;
+                height:max-content;
+                padding:0;
+            }
+            .header-nav{
+                color: black;
+                display: none;
+            }
+
+
+
+            .portfolio__title h2{
+                text-align: center;
+                margin-bottom:2rem;
+            }
+
+            .portfolio-content{
+                display: flex;
+                flex-direction: column;
+                height:max-content;
+            }
+
+            .pdf-container-row{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <nav class="header-nav">
+                    <a class="text-upper" href="/index.html">Home</a>
+                    <a class="text-upper" href="/index.html#about">About me</a>
+                    <a class="text-upper" href="/index.html#portfolio">Portfolio</a>
+                    <a class="text-upper" href="/index.html#contacts">Contact</a>
+                </nav>
+
+                <nav id="nav2" class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <!-- <a class="navbar-brand" href="#">Sneha</a> -->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html#contacts">Contact</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </header>
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio__title">
+                <h2 class="h2">Music Instrument Showroom</h2>
+            </div>
+
+            <!-- portfolio-card-desktop -->
+            <div class="portfolio-content">
+                <div class="pdf-container-row ">
+                    <a href="/img/pdf1.pdf" target="_blank">
+                        <img src="/img/cover1.png" alt="PDF Thumbnail" >
+                    </a>
+                    <a href="/img/pdf2.pdf" target="_blank">
+                        <img src="/img/cover2.png" alt="PDF Thumbnail" >
+                    </a>
+                </div>  
+
+                <div class="pdf-container-row">
+                    <a href="/img/pdf3.pdf" target="_blank">
+                        <img src="/img/cover3.png" alt="PDF Thumbnail">
+                    </a>
+                    <a href="/img/pdf4.pdf" target="_blank">
+                        <img src="/img/cover4.png" alt="PDF Thumbnail">
+                    </a>
+                </div>  
+
+                <div class="pdf-container-row">
+                    <a href="/img/pdf5.pdf" target="_blank">
+                        <img src="/img/cover5.png" alt="PDF Thumbnail">
+                    </a>
+                    <a href="/img/pdf6.pdf" target="_blank">
+                        <img src="/img/cover6.png" alt="PDF Thumbnail">
+                    </a>
+                </div>  
+
+                <div class="pdf-container-row">
+                    <a href="/img/pdf7.pdf" target="_blank">
+                        <img src="/img/cover7.png" alt="PDF Thumbnail">
+                    </a>
+                    <a href="/img/pdf8.pdf" target="_blank">
+                        <img src="/img/cover8.png" alt="PDF Thumbnail">
+                    </a>
+                </div>  
+
+                <div class="pdf-container-row">
+                    <a href="/img/pdf9.pdf" target="_blank">
+                        <img src="/img/cover9.png" alt="PDF Thumbnail">
+                    </a>
+                    <a href="/img/pdf10.pdf" target="_blank">
+                        <img src="/img/cover10.png" alt="PDF Thumbnail">
+                    </a>
+                </div>  
+
+                <div class="pdf-container-row">
+                    <a href="/img/pdf11.pdf" target="_blank">
+                        <img src="/img/cover11.png" alt="PDF Thumbnail">
+                    </a>
+                    <a href="/img/pdf12.pdf" target="_blank">
+                        <img src="/img/cover12.png" alt="PDF Thumbnail">
+                    </a>
+                </div>  
+
+                <div class="pdf-container-row">
+                    <a href="/img/pdf13.pdf" target="_blank">
+                        <img src="/img/cover13.png" alt="PDF Thumbnail">
+                    </a>
+                    <a href="/img/pdf14.pdf" target="_blank">
+                        <img src="/img/cover14.png" alt="PDF Thumbnail">
+                    </a>
+                </div>  
+
+                <div class="pdf-container-row">
+                    <a href="/img/pdf15.pdf" target="_blank">
+                        <img src="/img/cover15.png" alt="PDF Thumbnail">
+                    </a>
+                    <a href="/img/pdf16.pdf" target="_blank">
+                        <img src="/img/cover16.png" alt="PDF Thumbnail">
+                    </a>
+                </div>    
+
+                <div class="pdf-container-row">
+                    <a href="/img/pdf16.pdf" target="_blank">
+                        <img src="/img/cover17.png" alt="PDF Thumbnail">
+                    </a>
+                    <a href="/img/pdf18.pdf" target="_blank">
+                        <img src="/img/cover18.png" alt="PDF Thumbnail">
+                    </a>
+                </div>    
+            </div>
+            <!-- /.portfolio-content -->
+
+        </div>
+    </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <p>&copy; 2023 Sneha Bagade</p>
+        </footer>
+
+        <script>
+            document.getElementsByClassName("text-upper")
+        </script>
+</body>
+</html>
